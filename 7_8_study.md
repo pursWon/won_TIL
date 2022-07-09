@@ -113,7 +113,7 @@ print(Int(a))
 ---
 ```swift
 var dict: [String: Int] = [:] // Stirng: Int는 키와 값이다
-dict["one"] = 1 // 키인 "one"을 넣어서 값인 "1"이 
+dict["one"] = 1 // 키인 "one"을 넣어서 값인 "1"이 나온다.
 dict["two"] = 2
 dict["three"] = 3
 
@@ -125,7 +125,7 @@ print(dict.keys) // 같은 키에 값을 또 생성하면 덮어쓰기 된다
 컨트롤 플로우 : for
 ---
 ```swift
-for i in 0..<array.count {
+for i in 0..<array.count { // 첫번째부터 배열의 마지막까지 돌면서 반복한다.
 print(array[i])
 }
 ```
