@@ -112,8 +112,8 @@ print(Int(a))
 컬렉션 타입 : Dictionary 
 ---
 ```swift
-var dict: [String: Int] = [:] 
-dict["one"] = 1
+var dict: [String: Int] = [:] // Stirng: Int는 키와 값이다
+dict["one"] = 1 // 키인 "one"을 넣어서 값인 "1"이 
 dict["two"] = 2
 dict["three"] = 3
 
