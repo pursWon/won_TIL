@@ -68,7 +68,8 @@ alphabet.isWhitespace // 공백이 있는지 체크하기
 ```
 Int
 ---
-```var number: Int = 43
+```swift
+var number: Int = 43
 number.negate() // 숫자의 부호를 바꿔주는 함수 -> -43
 String(number) // 타입(값) <- 해당 타입으로 값을 반환해준다(형변환)
 Float(number) // 타입(값) <- 해당 타입으로 값을 반환해준다(형변환)
@@ -94,9 +95,9 @@ flag.toggle() // false
 var array: [String] = ["a", "b", "c", "d", "e"]
 array[2...4] // 뒤에 있는 인덱스 이하의 원소
 array[3..<4] // 뒤에 있는 인덱스 미만의 원소
-array.contains("q")
-array.append("f")
-array.insert("z", at: 1)
+array.contains("q") // "q"라는 문자가 있는지 확인
+array.append("f") // "f"라는 문자르 배열에 더해줌
+array.insert("z", at: 1) // 문자 "z"를 1번째에 삽입해줌 (0번째가 첫번째)
 ```
 
 컬렉션 타입 : Set
