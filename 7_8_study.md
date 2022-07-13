@@ -147,7 +147,7 @@ print(alpha)
 ---
 ```swift
 var num: Int = 0 // 조건을 만족하는 동안 반복 
-print("start)
+print("start")
 while true { 
 print(num)
 num += 1
