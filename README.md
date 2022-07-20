@@ -9,3 +9,4 @@ Today I learned
 - [7.17 공부 내용](7_17_study.md)
 - [7.18 수업 내용](7_18_study.md)
 - [7.19 공부 내용](7_19_study.md)
+- [7.20 공부 내용](7_20_study.md)
