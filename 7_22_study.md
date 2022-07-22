@@ -78,9 +78,26 @@ print("우리 모두 힘냅시다")
 }
 ```
 
+## 4. switch문의 where문
+---
+where 문을 사용하여 case 문에 조건을 추가할 수 있다.
+아래의 코드에서는 범위뿐만 아니라 3이나 2로 나누었을 때 나머지가 0이라는 조건을 추가하였다. 
 
+```swift
+var corte: Int = 150
 
+switch corte {
 
+case 1...100 where corte % 3 == 0:
+print("hoho")
+    
+case 100..<200 where corte % 2 == 0:
+print("haha")
+    
+default:
+print("nothing")
+}
+```
 
 
 
