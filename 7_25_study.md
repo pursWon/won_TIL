@@ -58,7 +58,7 @@ if let goodMovie1 = movieName1,
 ```
 여러개의 옵셔널을 바인딩 할 수 있다. 
 
-옵셔널 체이닝
+Optional Chanining (옵셔널 체이닝)
 ---
 ```swift
 let array: [String]? = []
