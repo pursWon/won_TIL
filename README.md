@@ -14,3 +14,4 @@ Today I learned
 - [7.22 공부 내용](7_22_study.md)
 - [7.24 공부 내용](7_24_study.md)
 - [7.25 공부 내용](7_25_study.md)
+- [7.27 공부 내용)(7_27_study.md)
