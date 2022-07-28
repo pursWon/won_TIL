@@ -1,4 +1,4 @@
-# 독학
+# 공부 
 Today I learned
 
 - [7.8 수업 내용](수업.7_8_study.md) 
