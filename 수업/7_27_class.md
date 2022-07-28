@@ -77,7 +77,7 @@ if let value = optionalValue, value == 12 { // optioanl(12)
 }
 
 //
-// ??
+// ?? -> optionalValue의 값이 담겨있지 않다면 57을 대신 넣어준다.
 print(optionalValue ?? 57)
 
 // guard문은 함수안에서만 사용할 수 있다.
