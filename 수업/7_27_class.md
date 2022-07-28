@@ -70,7 +70,7 @@ var optionalValue : Int? = Int("aa")
 
 // optioanlValue의 옵셔널을 벗겨봤는데 값이 존재하면 value 라는 상수에 담아주고, 그 value가 12와 같은지 비교한다.
 // 위의 두 조건이 모두 참일 경우, if문을 실행하고 하나라도 거짓일 경우 else 문을 실행한다.
-if let value = optionalValue, value == 11 { // optioanl(12)
+if let value = optionalValue, value == 12 { // optioanl(12)
     print("\(value)와 12는 같습니다") // optioanl(12)
 } else {
     print("다릅니다")
