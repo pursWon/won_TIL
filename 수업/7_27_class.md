@@ -133,17 +133,25 @@ guard는 조건이 성립하지 않을 경우 바로 값을 반환하고 종료�
  이름(name), 나이(age), 성별(gender)
  */
 
-struct Person {
+import Foundation
+
+struct Person { // 구조체 선언
     var name: String
-    let age: Int
+    var age: Int
     let gender: String
 }
 
-let 철수: Person = Person(name: "김철수", age: 18, gender: "남자")
-var 복제인간철수 = 철수
+let 민수: Person = Person(name: "민수", age: 17, gender: "남자")
+var 궤도민수 = 민수
 
-복제인간철수.name = "이철수"
-철수.name
+궤도민수.name = "궤도민수"
+궤도민수.age = 40
+
+print(민수) // Person(name: "민수", age: 17, gender: "남자")
+print(궤도민수) // Person(name: "궤도민수", age: 40, gender: "남자")
+
+// 구조체는 복사가 되므로 복사된 구조체가 name과 age를 변경하여도 기존의 구조체는 영향을 받지 않으므로 변화가 없다.
+
 ```
 
 클래스
