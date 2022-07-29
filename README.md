@@ -15,3 +15,4 @@ Today I learned
 - [7.24 공부 내용](7_24_study.md)
 - [7.25 공부 내용](7_25_study.md)
 - [7.27 수업 내용](https://github.com/pursWon/won_TIL/blob/main/수업/7_27_class.md)
+- [7.29 공부 내용](https://github.com/pursWon/won_TIL/blob/main/독학/7_29_study.md)
