@@ -119,6 +119,8 @@ if let teacher = child as? Teacher {
 } else if let teacher = child as? Drink {
     print("주스입니다.")
 }
+
+// 결과물 -> "선생님입니다."
 ```
 
 if let 바인딩 구문을 통해 true, false 를 확인할 수 있다.
