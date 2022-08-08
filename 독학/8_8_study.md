@@ -25,6 +25,7 @@ func name(parameters) -> Return Types {
 
 이 형식은 3가지 방식이 존재한다.   
 
+
 **1. Argument Label과 Parameter Name 선언하기**  
 
 Argument Label: 함수를 선언할 때 쓰는 이름.  
@@ -61,6 +62,7 @@ sayHello("Wongi")
 
 Parameter Name은 당연하게도 생략이 불가능하다.    
 
+
 **2. Argument Label과 Parameter Name을 한꺼번에 선언하기**
 
 ```swift 
@@ -74,6 +76,7 @@ sayHello(name: Wongi)
 name이 Argument Label과 Parameter Name의 두 가지 역할 모두를 한다.    
 
 호출할 때도, name이 Argument Label의 역할로서 쓰이게 된다.    
+
 
 **3. 파라미터를 받지 않을 경우**
 
