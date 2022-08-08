@@ -21,4 +21,4 @@ Today I learned
 - [8.1 공부 내용](https://github.com/pursWon/won_TIL/blob/main/독학/8_1_study.md)
 - [8.2 공부 내용](https://github.com/pursWon/won_TIL/blob/main/독학/8_2_study.md)
 - [8.4 공부 내용](https://github.com/pursWon/won_TIL/blob/main/독학/8_4_study.md)
-- [8.9 공부 내용](https://github.com/pursWon/won_TIL/edit/main/독학/8_9_study.md)
+- [8.9 공부 내용](https://github.com/pursWon/won_TIL/blob/main/독학/8_9_study.md)
