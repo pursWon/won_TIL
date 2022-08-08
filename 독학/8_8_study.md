@@ -1,8 +1,8 @@
 8월 8일 공부 내용 
 ===
 
-함수와 메소드
---- 
+# 함수와 메소드
+ 
 
 func 키워드로 생성하는 모든 것은 "함수"이다.   
 
@@ -26,7 +26,8 @@ func name(parameters) -> Return Types {
 이 형식은 3가지 방식이 존재한다.   
 
 
-**1. Argument Label과 Parameter Name 선언하기**  
+**1. Argument Label과 Parameter Name 선언하기**
+---
 
 Argument Label: 함수를 선언할 때 쓰는 이름.  
 
@@ -64,7 +65,7 @@ Parameter Name은 당연하게도 생략이 불가능하다.
 
 
 **2. Argument Label과 Parameter Name을 한꺼번에 선언하기**
-
+---
 ```swift 
 func sayHello(name: String) {
 print("Hi, \(name)")
@@ -79,6 +80,7 @@ name이 Argument Label과 Parameter Name의 두 가지 역할 모두를 한다.
 
 
 **3. 파라미터를 받지 않을 경우**
+---
 
 ```swift
 func sayHello() {
