@@ -32,3 +32,29 @@ func Calculate(array: Int...) {
 
 Calculate(array: 1, 2, 3, 4, 5, 6, 7)
 ```
+
+readLine() 계속 입력을 받는데, 만약 입력값이 “end” 일때 while문을 종료시키고 “end를 만났습니다.” 라고 출력해보기
+---
+
+```swift
+import Foundation
+
+while true {
+    
+    print("시작")
+    print(1)
+    print(3)
+    print(5)
+    print(7)
+    
+    let insert: String = readLine()!
+   
+    if insert == "end" {
+    print("end가 나옴으로써 종료합니다!")
+    break
+    } else {
+    continue
+    }
+    
+}
+```
