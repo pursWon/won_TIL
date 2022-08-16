@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     @IBAction func initializeButton(_ sender: UIButton) {
         print("빨간 버튼 눌림")
         
-        contentTextField.text = ""
+        contentTextField.text = "" // 텍스트필드에 빈칸을 만들어준다.
     }
     
     @IBAction func changeColorButton(_ sender: UIButton) {
