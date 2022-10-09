@@ -53,5 +53,66 @@ destination을 통해서 segue의 목적지 뷰 컨트롤러를 추출해 낼 �
 
 labelString은 첫번째, 두번째 뷰컨트롤러에 존재하는 String 변수이다. 이 곳에서 뷰 컨트롤러간에 데이터 교환이 일어나게 된다.   
 
+(6) performSegue 사용 후 데이터 전달받기   
+
+```swift
+
+class SecondViewController: UIViewController {
+    @IBOutlet weak var textLabel: UILabel!
+    
+    var labelString: String = ""
+}
+```
+
+첫번째 뷰 컨트롤러로부터 받은 데이터는 labelString으로 들어가고, 이 데이터는 textLabel에 적용될 것이다.   
+
+```swift
+override func viewDidLoad() {
+super.viewDidLoad()
+textLabel.text = labelString
+}
+
+```
+
+textLabel 텍스트에 데이터를 전달하는 시점은 두 번째 뷰컨트롤러가 메모리에 올라가는 시점인 viewDidLoad에 지정하면 된다.   
+
+```swift
+
+@IBAction func buttonPressed(_sender: UIButton) {
+  performSegue(withIdentifier: "presentToSecond", sender: nil)
+}
+
+```
+
+이제 performSegue 메소드를 실행시키는 버튼을 누르면 데이터가 옮겨갈 것이다.      
+         
+performSegue로 바로 데이터를 넘겨주는 방법도 존재한다.   
+
+```swift
+
+@IBAction func buttonPressed(_sender: UIButton) {
+  performSegue(withIdentifier: "presentToSecond", sender: dataString)
+}
+
+```
+두번째 인자값에 데이터를 남겨준다.    
+
+```swift
+
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+guard let secondViewController = segue.destination as? SecondViewController, 
+let labelString = sender as? String else { return }
+
+secondViewController.labelString = labelString 
+
+```
+
+sender로 String 값인지 확인한 후에, 두번째 뷰 컨트롤러로 넘겨주면 앞서 했던 결과와 동일하게 다음 뷰 컨트롤러로 데이터 전달이 가능해진다.   
+
+
+
+
+
 
 
