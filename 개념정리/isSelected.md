@@ -12,6 +12,8 @@ var isSelected: Bool { get set }
 
 예시 : 여러 개의 버튼이 있고 내가 누르는 버튼만 색이 바뀌고 누르지 않는 버튼은 기존의 색을 유지한다.
 
+[isSelected](isSelected예시.png)
+
 
 
 
