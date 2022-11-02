@@ -30,7 +30,7 @@ Key - Value 값을 더 추가해주고 싶으면, ,(comma)를 이용하면 된�
 
 {
 
-"name": "Hong WonGi"
+"name": "Hong WonGi",
 "age": "28"
 
 }
@@ -72,7 +72,7 @@ JSON 객체의 배열
 {
 "name": "Hong"
 "age": "28"
-}
+},
 
 {
 "name": "Lee"
