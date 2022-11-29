@@ -28,6 +28,8 @@ print(string) // I n o this ll y.
 
 var numbers: [Int] = [25, 10, 14, 18, 100, 45]
 numbers.removeAll { $0 % 5 == 0 }
-print(numbers)
+print(numbers) // [14, 18]
 
 ```
+
+-> removeAll에서 소괄호와 where를 제외하고도 이런 식으로 사용이 가능하다.
