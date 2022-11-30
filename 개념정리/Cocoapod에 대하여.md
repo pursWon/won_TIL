@@ -85,7 +85,7 @@ podfile에 입력할 때에는 해당 링크에서 cocoapods에 무엇이라고 
 pod install
 ```
 
-pod install을 쳤을 때 생기는 오류문구 → <span style="color:red">[!]Oh no, an error occurred.</span>
+pod install을 쳤을 때 생기는 오류문구 → ****[!]Oh no, an error occurred.****
 
 
 맥북 에어m1에서 생기는 오류라고 한다.    
