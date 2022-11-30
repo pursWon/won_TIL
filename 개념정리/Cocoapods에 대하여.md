@@ -44,3 +44,33 @@ Podfile의 Pod를 수정, 추가, 삭제할 때도 사용한다.
 pop update 라이브러리 이름 
 
 → pod update뒤에 라이브러리 이름을 써주면 코코아팟은 해당 팟의 업데이트된 버전이 있는지 찾아서 최신 버전으로 업데이트 시켜준다.
+
+# Cocoapod의 사용방법 
+
+**1단계**
+
+```markdown
+sudo gem install cocoapods
+```
+
+**2단계**
+
+```markdown
+cd 해당되는 프로젝트 폴더의 경로 
+```
+
+**3단계**
+
+```markdown
+pod init // pod 파일을 생성해준다. 
+```
+
+**4단계**
+
+```markdown
+open -e podifle // pod 파일을 열어준다. 
+```
+
+**5단계**
+
+podfile을 열어서 Tabman 라이브러리를 사용할 것이므로 다음과 같이 입력한다.
