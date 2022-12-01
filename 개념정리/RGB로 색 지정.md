@@ -13,16 +13,18 @@ let color = UIColor(red: 117/255.0, green: 18/255.0, blue: 54/255.0, alpha: 1.0)
 
 ```
 
+TabBar의 배경색으로 지정을 한다. 
+
 ```swift 
 
 bar.backgroundView.style = .flat(color: color)
 
-```
-TabBar의 배경색으로 지정을 한다.           
+```          
+보다시피 TabBar의 색이 버건디 색으로 잘 입혀졌다.      
 
 <img width="335" alt="스크린샷 2022-12-01 오후 3 46 13" src="https://user-images.githubusercontent.com/99719661/204986890-0bc59de6-49ad-4673-aaf9-3369ef353ced.png">
 
-보다시피 TabBar의 색이 버건디 색으로 잘 입혀졌다.       
+     
 
 
 
