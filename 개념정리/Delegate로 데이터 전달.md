@@ -96,11 +96,3 @@ class FirstVC: UIViewController, SampleProtocol {
     self.navigationController?.pushViewController(nextVC, animated: true)
   }
 }
-
-
-
-
-
-
-
-
