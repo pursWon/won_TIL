@@ -52,3 +52,10 @@ let header = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 60))
 자신을 좌표계로 삼고 시작하기 때문에 (0, 0)으로 초기화된다. 
 
 View를 감싸고 있는 직사각형의 크기가 아닌 View 자체가 Bound를 사용할 때에 크기가 된다.
+
+정리
+
+|  | frame | bounds |
+| --- | --- | --- |
+| origin (x, y) 기준점 | Super View의 좌표계 | 자신의 좌표계 |
+| size (width, height) 기준점  | View 영역을 모두 감싸는 사각형 | View 영역 그 자체  |
