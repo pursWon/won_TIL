@@ -25,3 +25,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 기존에 버튼을 눌러서 텍스트필드와 레이블의 텍스트가 같아지게끔 했다면 대리자를 뷰컨트롤러로 설정함으로써 뷰컨트롤러가 해당 역할을 대신해서 할 수 있게     
 되었다. 텍스트필드 값을 입력한 뒤에 엔터를 누르면 레이블에도 텍스트 값이 들어가게 된다.     
+
+https://user-images.githubusercontent.com/99719661/207632451-6fe169eb-63bf-4974-bfe2-c52d0f4016b1.mp4
+
