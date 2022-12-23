@@ -15,10 +15,11 @@ subView는 움직이지 않고 오히려 imageView가 움직이게 되는데, �
 
 <img width="313" alt="스크린샷 2022-12-23 오후 11 14 27" src="https://user-images.githubusercontent.com/99719661/209351144-5d27662c-81b4-4161-b378-c4554af9b0b0.png">
 
+**Bounds**에서는 기준이 자신의 orgin이 좌표이므로 해당 모양을 회전시켜도 본인의 크기와 좌표를 유지하게 도됩니다. 
 
+<img width="313" alt="스크린샷 2022-12-23 오후 11 14 49" src="https://user-images.githubusercontent.com/99719661/209362680-3cd268d3-768a-4e9e-ab10-f502fca9ee3e.png">
 
-
-
+**Frame**에서는 이렇게 뷰가 회전했을 때 Frame은 뷰를 감싸고 있는 사각형이므로 해당 모양에 맞게끔 변하게 됩니다. 
 
 
 
