@@ -11,9 +11,6 @@ Application에 이름을 입력하고 Mobile Dynamic Map에 체크한다.
 
 (3) 서비스 환경 등록에 Bundle Identifier를 추가 버튼을 눌러서 추가해준다.
 
-
-(예시 이미지)
-
 (4) 라이브러리를 설치하기에 앞서 필요한 프로그램들을 설치해준다. 
 
 cocoapod이 설치되어 있지 않으면 다음 명령어를 입력
@@ -56,6 +53,8 @@ Podfile에 아래 코드를 추가한다.
 
 pod ‘NMapsMap’
 
+<img width="682" alt="스크린샷 2022-12-28 오전 2 22 03" src="https://user-images.githubusercontent.com/99719661/209844262-38dd1038-5ac5-4dfd-a22b-d79074abcc9b.png">
+
 pod install로 라이브러리를 설치해준다. 
 
 ```xml
@@ -63,6 +62,8 @@ pod install --repo-update
 ```
 
 (5) 클라이언트 ID를 설정해준다. 
+
+<img width="695" alt="스크린샷 2022-12-28 오전 2 26 02" src="https://user-images.githubusercontent.com/99719661/209844586-7e3628c5-5c33-449b-9a1a-43d5e48d506c.png">
 
 pod install 을 하면 xcworkspace 파일이 생성된다.
 
@@ -93,6 +94,8 @@ ViewDidLoad 함수에 아래 코드를 추가해 네이버 지도를 화면에 �
 let mapView = NMFMapView(frame: view.frame)
 view.addSubview(mapView)
 ```
+
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-12-28 at 02 28 42](https://user-images.githubusercontent.com/99719661/209844361-2190d1f2-57da-489f-a4e5-80ab6245b4ef.png)
 
 **총 코드** 
 
@@ -139,6 +142,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewCam
 ```
 
 **위도**와 **경도**를 추가할 수 있게끔 되었다.
+
+<img width="427" alt="스크린샷 2022-12-29 오전 1 41 06" src="https://user-images.githubusercontent.com/99719661/209844472-f9b202ad-4e3f-461c-a4b0-6537a9fb3cd8.png">
+
 
 
 
