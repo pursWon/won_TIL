@@ -93,3 +93,52 @@ ViewDidLoad 함수에 아래 코드를 추가해 네이버 지도를 화면에 �
 let mapView = NMFMapView(frame: view.frame)
 view.addSubview(mapView)
 ```
+
+총 코드 
+
+```swift 
+
+import NMapsMap
+import CoreLocation
+
+class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewCameraDelegate {
+    
+    var locationManager = CLLocationManager()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let mapView = NMFMapView(frame: view.frame)
+        view.addSubview(mapView)
+        
+        locationManager.delegate = self
+        self.locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            print("위치 서비스 On 상태")
+            locationManager.startUpdatingLocation()
+            print(locationManager.location?.coordinate)
+            let cameraPosition = mapView.cameraPosition
+            print(cameraPosition)
+            
+            let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: 37.5666102, lng: 126.9783881))
+            mapView.moveCamera(cameraUpdate)
+            print(cameraUpdate)
+            
+            let coord = NMGLatLng(lat: 37.577013, lng: 126.9783740)
+            print("위도: \(coord.lat), 경도: \(coord.lng)")
+            
+        } else {
+            print("위치 서비스 Off 상태")
+        }
+    }
+}
+
+```
+
+**위도**와 **경도**를 추가할 수 있게끔 되었다.
+
+
+
