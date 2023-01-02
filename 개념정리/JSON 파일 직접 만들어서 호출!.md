@@ -3,7 +3,7 @@ JSON 파일 직접 만들어서 호출
 
 <img width="730" alt="스크린샷 2023-01-03 오전 3 22 02" src="https://user-images.githubusercontent.com/99719661/210269413-f67c18ef-00dd-438d-b8a4-2dbd2b184e23.png">
 
-String File을 이용해서 **JSON** 형식의 파일을 만들어야 한다. 파일명은 People, 확장자 파일명은 json.
+String File을 이용해서 **JSON** 형식의 파일을 만들어야 한다. **파일명**과 **확장자 파일명**을 정해야 한다. 파일명은 People, 확장자 파일명은 json.
 
 ```json
 {
