@@ -30,13 +30,25 @@ func setupSearchCotroller() {
     }
 ```
 
- searchController.searchResultsUpdater = self ✅
+```swift 
 
- searchController가 UISearchResultsUpdating를 준수하게 하고 ViewController가 UISearchResultsUpdating의 Delegate가 되도록 설정해주면 된다.
+override func viewDidLoad() {
+setupSearchCotroller()
+}
+```
 
+searchController.searchResultsUpdater = self ✅
 
+searchController가 UISearchResultsUpdating를 준수하게 하고 ViewController가 UISearchResultsUpdating의 Delegate가 되도록 설정해주면 된다.
 
+```swift 
+extension SearchViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+    }
+}
 
+```
 
 
 
