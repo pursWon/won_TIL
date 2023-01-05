@@ -56,7 +56,39 @@ print(myBicycleWheel)
 
 2가 아니므로 오류가 발생하고 “바퀴 개수는 2개여야 합니다. 해당 개수는 맞지 않습니다.”를 프린트해준다.
 
+전체 코드
 
+```swift
+import Foundation
+
+enum Bicycle: Error {
+    case wheel
+}
+
+func bicycleError(bicycleWheel: Int) throws -> Int {
+    guard bicycleWheel == 2 else {
+        throw Bicycle.wheel
+    }
+    
+    return bicycleWheel
+}
+
+func getBicycleError(bicycleWheel: Int) -> Int {
+    var wheelCount: Int = 0
+    do {
+    wheelCount = try bicycleError(bicycleWheel: bicycleWheel)
+    } catch Bicycle.wheel {
+        print("바퀴 개수는 2개여야 합니다. 해당 개수는 맞지 않습니다.")
+    } catch {
+        print("default error catch")
+    }
+
+    return wheelCount
+}
+
+let mine = getBicycleError(bicycleWheel: 10)
+print(mine)
+```
 
 
 
