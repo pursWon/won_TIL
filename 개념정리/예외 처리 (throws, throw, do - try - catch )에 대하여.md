@@ -1,4 +1,4 @@
-예외 처리 (throws, throw, do - try - catch )
+예외 처리 (throws, throw, do - try - catch )에 대하여
 ===========
 
 예외 처리가 필요한 이유? 
