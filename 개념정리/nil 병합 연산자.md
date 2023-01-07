@@ -21,7 +21,14 @@ print("Nothing")
 
 이렇게 if let절로 안전하게 box를 언랩핑해서 openBox에 담아줄 수 있지만, nil 병합 연산자 방법을 사용하면
 
+```swift
+import Foundation
 
+let box: String? = "Present"
+
+let openBox = box ?? "Nothing"
+print(openBox)
+```
 
 위의 코드와 같이 옵셔널 String 타입 box를 선언하고 해당 옵셔널을 해제하는 과정을
 
