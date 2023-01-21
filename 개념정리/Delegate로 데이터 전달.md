@@ -67,7 +67,7 @@ class SecondVC: UIViewController {
 }
 ```
 
-2. FirstVC에서 protocoel 채택   
+2. FirstVC에서 protocol 채택   
 
 ```swift
 
