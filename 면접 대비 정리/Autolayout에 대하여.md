@@ -1,4 +1,4 @@
-Autolayout이란 무엇인지 설명해주세요
+Autolayout에 대하여
 ===========
 
 **AutoLayout**은 Storyboard에서 제약 조건(=Constraints)을 이용해서 View의 위치나 크기를 지정하는 것입니다. 
