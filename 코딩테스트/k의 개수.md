@@ -31,7 +31,7 @@ func solution(_ i:Int, _ j:Int, _ k: Int) -> Int {
 }
 
 solution(1, 13, 1) // 6
-solution(5, 50, 5) // 6
-solution(3, 10, 2) // 6
+solution(5, 50, 5) // 5
+solution(3, 10, 2) // 0
 
 ```
