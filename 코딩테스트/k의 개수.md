@@ -18,7 +18,7 @@ func solution(_ i:Int, _ j:Int, _ k: Int) -> Int {
     
     
     for number in numbers {
-        let b = String(number).split(separator: "").map{ Int($0) ?? 0 }
+        let b = String(number).map{ String($0) }.map{ Int($0) ?? 0 }
         
         for n in b {
             if n == k {
