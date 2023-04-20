@@ -35,3 +35,21 @@ solution(5, 50, 5) // 5
 solution(3, 10, 2) // 0
 
 ```
+
+더 짧고 효율적인 풀이
+
+```swift 
+
+import Foundation
+
+func solution(_ i:Int, _ j:Int, _ k:Int) -> Int {
+    var answer = 0
+    
+    for n in i...j {
+        answer += String(n).map{ String($0) }.filter{ $0 == String(k) }.count
+    }
+    
+    return answer
+}
+
+```
