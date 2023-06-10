@@ -1,4 +1,4 @@
-Dispatchqueue에 대하여
+Dispatchqueue에 대하여 (요약)
 ===
 
 Grand Central Dispatch (GCD) dispatch queues는 task 수행을 위한 강력한 도구입니다. Dispatch Queues를 사용하면 호출자(caller)와 관련하여 비동기/동기식으로 임의의 코드 블록을 수행 할 수 있습니다. Dispatch Queues를 사용하여 별도의 쓰레드에서 수행하는 거의 모든 task를 수행 할 수 있습니다. dispatch queues의 장점은 사용하기 쉽고, 해당 쓰레드 코드보다 해당 task를 실행 할 때 훨씬 효율적이라는 것이다. 이 챕터에서는 dispatch queues를 사용하여 앱에서 일반 task를 실행하는 방법에 대한 정보를 제공한다.
