@@ -6,16 +6,22 @@ DispatchQueue에 대하여
 
 DispatchQueue의 사전적 정의를 보자면,    
  
-Main Thread 혹은 Background Thread에서 concurrent 혹은 serial 하게 실행되는 작업을 관리하는 객체이다.   
+Main Thread 혹은 Background Thread에서 concurrent 혹은 serial 하게 실행되는 작업을 관리하는 객체이다.  
+
+</br></br>
 
 ## DispatchQueue의 종류
  
-**Main - Serial**
-**Main - Concurrent**
-**Background - Serial**
-**Background - Serial**
+**Main - Serial**     
+**Main - Concurrent**         
+**Background - Serial**          
+**Background - Serial**        
+
+</br>
 
 ![스크린샷 2023-06-09 오후 3 13 43](https://github.com/pursWon/AboutRamen/assets/99719661/318cd85c-2277-4f65-af19-3423fa22625f)
+
+</br></br>
 
 DispatchQueue의 개념 설명에 대해서 보자면
  
@@ -41,11 +47,15 @@ DispatchQueue에 의해 작업이 실행한다.
 
 당신의 코드는 아이템이 실행되는 동안 연속적으로 실행된다.   
 
-⚠️ Main queue에서 동기적으로 작업을 시도할 경우에 deadlock에 걸릴 수 있다.   
+⚠️ Main queue에서 동기적으로 작업을 시도할 경우에 deadlock에 걸릴 수 있다.  
+
+</br></br>
 
 여기서, **Deadlock**이란 무엇인가?
 
 ![dead lock](https://github.com/pursWon/AboutRamen/assets/99719661/69cfcd3c-5304-4b6e-bdf4-6113e442ed60)
+
+</br>
 
 위의 사진은 차가 양보없이 서로 직진만 하겠다고 하다가     
  
@@ -64,6 +74,8 @@ Deadlock의 정의를 살펴보자면,
 발생되는 상황을 예시로 하나 들자면.  
 
 Deadlock의 발생조건은 총 4가지가 있다.       
+
+</br></br>
 
 ## DispatchQueue의 사용 방법
  
@@ -93,9 +105,13 @@ for j in 10...14 {
 
 ![스크린샷 2023-06-09 오후 4 21 28](https://github.com/pursWon/AboutRamen/assets/99719661/15a6aeab-22ba-4b6f-90c5-35a898d1e6f0)
 
+</br>
+
 순차적으로 처리하기 때문에
  
 결과는 위와 동일하다.
+
+</br></br>
 
 **2. Async + Serial**   
 
@@ -124,9 +140,13 @@ for j in 10...14 {
 
 ![스크린샷 2023-06-09 오후 4 35 40](https://github.com/pursWon/AboutRamen/assets/99719661/138b4675-e150-4285-95c3-d38eed600ce0)
 
+</br>
+
 결과는 매번 실행때마다 다르다.   
  
 왜냐면 async는 완료 여부에 상관없이 다음 코드를 실행하기 때문이다.   
+
+</br></br>
  
 **3. Sync + Concurrent**
 
@@ -171,8 +191,11 @@ for i in 100...105 {
 
 결과물은 다음과 같이 나온다.
 
+</br></br>
 
 4. **Async + Concurrent**      
+
+</br>
  
 Main Thread의 작업 흐름이 task를 queue에 넘기자마자 반환되고(async), 넘겨진 task는 queue에      
  
@@ -209,6 +232,8 @@ for i in 100...105 {
 ```
 
 ![스크린샷 2023-06-09 오후 5 11 16](https://github.com/pursWon/AboutRamen/assets/99719661/7a45d80b-4b2e-4b6a-9ed6-1a8548c73b1a)
+
+</br>
 
 결과는 위와 같다.    
 
