@@ -80,6 +80,8 @@ Deadlock의 발생조건은 총 4가지가 있다.
 ## DispatchQueue의 사용 방법
  
 **1. Sync + Serial**
+
+</br>
  
 메인 Thread의 작업 흐름이 Queue에 넘긴 task가 끝날 때까지 멈춰있고(sync), 넘겨진 task는 queue에 먼저 담겨있던
  
@@ -113,7 +115,9 @@ for j in 10...14 {
 
 </br></br>
 
-**2. Async + Serial**   
+**2. Async + Serial**  
+
+</br>
 
 Main Thread의 작업 흐름이 queue에 넘기자마자 반환되고(async),   
  
@@ -149,6 +153,8 @@ for j in 10...14 {
 </br></br>
  
 **3. Sync + Concurrent**
+
+</br>
 
 Main Thread의 작업 흐름이 queue에 넘긴 task가 끝날때까지 멈춰있고(sync),   
  
