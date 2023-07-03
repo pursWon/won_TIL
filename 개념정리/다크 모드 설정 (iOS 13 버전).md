@@ -18,12 +18,11 @@ Info.plist에서 Appearance를 설정한다.
 ```swift
 
 @IBAction func lightButton(_ sender: UIButton) {
-    if self.overrideUserInterfaceStyle == .light {
-            UserDefaults.standard.set("Dark", forKey: "Appearance")
+if self.overrideUserInterfaceStyle == .light {
+    UserDefaults.standard.set("Dark", forKey: "Appearance")
 } else {
     UserDefaults.standard.set("Light", forKey: "Appearance")
 }
-
   self.viewWillAppear(true)
 }
 
