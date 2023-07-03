@@ -61,7 +61,6 @@ func appearanceCheck(_ viewController: UIViewController) {
                 UIApplication.shared.statusBarStyle = .default
             }
         } else {
-            print(appearance)
             viewController.overrideUserInterfaceStyle = .dark
             
             if #available(iOS 13.0, *) {
