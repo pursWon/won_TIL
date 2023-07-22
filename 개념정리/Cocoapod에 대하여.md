@@ -7,7 +7,10 @@ Cocoapad
 
 **pop setup --verbose**
 
-설치가 완료되었는지 확인하려면, 
+설치가 완료되었는지 
+
+
+확인하려면, 
 
 **pod --version**
 
