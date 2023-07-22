@@ -4,7 +4,13 @@ Hashable 프로토콜에 대하여
 Hashable에 대한 간단한 뜻은 "유일하게 표현 가능한 값을 제공한다, 검색이 용이하다"로 이해한다.    
 
 Hashable 프로토콜을 준수한다는 뜻은 hash 될 수 있는 타입인 것이다. hash 될 수 있다는 뜻은 hash 함수에 적용할 수 있다는 뜻이며, 임의의 길이의 데이터를 유일하게 표현 가능한 고정된 길이의 데이터로 바꿀 수 있다는 뜻이다.   
-Hashable 프로토콜은 Equatable을 상속한 프로토콜이고, Swift의 모든 기본 타입은 Hashable 프로토콜을 따르도록 설계됐다.   
+
+
+
+Hashable 프로토콜은 
+
+
+Equatable을 상속한 프로토콜이고, Swift의 모든 기본 타입은 Hashable 프로토콜을 따르도록 설계됐다.   
 
 **Dictionary의 Key와 Set 값은 왜 Hashable 해야할까?** 
 
