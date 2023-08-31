@@ -3,6 +3,8 @@ Array의 메소드
 
 **1. 배열 생성하기**
 
+</br>
+
 ```swift
 
 let array1 = [1, 2, 3]
@@ -11,11 +13,17 @@ let array2: [Int] = [1, 2, 3]
 
 ```
 
+</br>
+
 배열을 선언할 때에 선언할 수 있는 방법은 대표적으로 위의 2가지가 존재한다.   
 
 Swift는 타입에 굉장히 민감한 언어이므로 무언가를 선언할 때에는 반드시 타입을 명시해주도록 하자.    
 
+</br>
+
 **2. 배열 개수 확인하기**
+
+</br>
 
 ```swift
 
@@ -25,9 +33,15 @@ let isEmpty: Bool = array.isEmpty // false
 
 ```
 
-배열이 비었는지를 확인할 때에는 isEmpty 메소드를 사용하자.   
+</br>
+
+배열이 비었는지를 확인할 때에는 isEmpty 메소드를 사용하자. 
+
+</br>
 
 **3. 배열 요소에 접근하기**
+
+</br>
 
 ```swift
 
@@ -45,6 +59,8 @@ array.first // Optional(1)
 array.last // Optioanl(5)
 
 ```
+
+</br>
 
 Subscript나 범위로 접근하는 것은 위험성이 있다.    
 
