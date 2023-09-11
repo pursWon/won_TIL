@@ -3,6 +3,8 @@ Codable에 대하여
 
 **Codable의 정의 :**
 
+</br>
+
 JSON 데이터를 간편하고 쉽게 Encoding / Decoding 할 수 있게 해준다.   
 
 서버와 데이터를 주고 받을 때, 주로 JSON으로 주고 받게 되는데,        
