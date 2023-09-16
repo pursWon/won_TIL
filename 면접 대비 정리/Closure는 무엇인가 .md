@@ -28,6 +28,8 @@ let sorted = list.sorted(by: { (v1: Int, v2: Int) -> Bool in
 print(sorted) // [12, 15, 23, 33, 46]
 ```
 
+<\br>
+
 클로저는 메서드의 특징을 안다면 축약이 가능합니다. 
 
 첫번째로, 가능한 축약은 **타입**입니다. 
