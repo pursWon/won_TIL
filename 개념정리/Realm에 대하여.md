@@ -19,6 +19,8 @@ https://github.com/realm/realm-swift
 
 추가해준 후에, Model을 설정을 다음과 같이 설정한다. 
 
+</br>
+
 ```swift 
 
 import Foundation
