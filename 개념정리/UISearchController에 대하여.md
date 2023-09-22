@@ -7,6 +7,8 @@ UISearchController에 대하여
 
 검색 창을 만들 때에는 UISearchController를 이용하여 만들어준다. UISearchController가 SearchBar를 내포하고 있다.
 
+</br>
+
 ```swift
 let searchController = UISearchController(searchResultsController: nil)
 self.navigationItem.searchController = searchController
