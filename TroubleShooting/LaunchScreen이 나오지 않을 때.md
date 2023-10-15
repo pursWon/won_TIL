@@ -45,6 +45,8 @@ window를 사용하여 rootViewController를 변경할 수 있다.
 
 ![image](https://github.com/pursWon/won_TIL/assets/99719661/f382126c-0643-4042-9739-9d0d69b1778c)
 
+</br>
+
 말 그대로 window를 위한 View Controller이다.
 
 </br></br>
