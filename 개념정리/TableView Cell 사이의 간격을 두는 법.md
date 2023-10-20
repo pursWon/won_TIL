@@ -3,6 +3,8 @@ TableView Cell 사이의 간격을 두는 법
 
 ![simulator_screenshot_4D299263-DEB1-452B-849A-A9979228C70A](https://github.com/pursWon/won_TIL/assets/99719661/607d98c5-1da2-4418-9aab-717cae8b94a8)
 
+</br>
+
 위의 그림과 같이 cell사이에 간격을 두고 싶다면,   
 
 UITableViewCell 내의 함수인 layoutSubViews를 이용하면 된다.   
