@@ -11,12 +11,22 @@ Storyboard를 삭제하는 법
  
 해당 메뉴에서 Storyboard를 삭제해주면 된다. (이미지는 삭제하고 난 후의 화면)
 
-2. 위의 파란색 프로젝트를 클릭 → Targets의 파란색 프로젝트 → Info → Main Storyboard file base name (Value에는 "Main") 삭제
- 
+2. 위의 파란색 프로젝트를 클릭 → Targets의 파란색 프로젝트 → filter 창에 Main 검색 -> UIKit Main Storyboard File Base Name 제거
+
+</br>
+
+![스크린샷 2023-10-23 오전 9 24 01](https://github.com/pursWon/won_TIL/assets/99719661/2f88b94d-147a-4cf1-b615-5664ead388d2)
+
+</br>
+
 3. Info.plist에 들어가서 Application Scene Manifest 부분에 마우스를 갖다 대면 Item 0 버튼이 나오는데, 계속 확장해서 위와 같이 펼친다.      
-Storyboard Name을 확장해서 키 부분을 삭제한다. 이때 삭제는 - 버튼으로 삭제하면 된다.    
+Storyboard Name을 확장해서 키 부분을 삭제한다. 이때 삭제는 - 버튼으로 삭제하면 된다.
+
+</br>
  
-4. SceneDeleagate에 들어가서 willConnectTo 함수안에 해당 코드를 추가    
+4. SceneDeleagate에 들어가서 willConnectTo 함수안에 해당 코드를 추가
+
+</br>
 
 ```swift
 guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -26,6 +36,9 @@ guard let windowScene = (scene as? UIWindowScene) else { return }
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
 ```
+
+</br>
+
 5. Scene Life Cycle을 채택했을 때, iOS 13 이전의 기기에서도 작동하려면 다음과 같은 코드를 AppDelegate에 추가해주면 된다.
 
 ```swift
@@ -43,8 +56,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 ```
+
+</br>
  
 6. view의 배경색을 바꿔서 잘 작동이 되는지 확인하기
+
+</br>
 
 ```swift
 override func viewDidLoad() {
@@ -52,7 +69,9 @@ override func viewDidLoad() {
         view.backgroundColor = .orange
 
     }
-```    
+```
+
+</br>
     
 view의 배경색이 잘 나오면 과정이 잘 완료된 것임을 알 수 있다. 
 
