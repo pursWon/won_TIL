@@ -103,7 +103,7 @@ put(Key, Value) : Map의 Key에 해당하는 value를 저장한다.
 
 Account acct = new Account();
 acct.Id = '001d000000boasdSAA2';
-acct.Name = '삽압될 계정이름';
+acct.Name = '삽입될 계정이름';
 
 Map<Id, Account> accountMap = new Map<Id, Account>();
 accountMap.put(acct.Id, acct);
