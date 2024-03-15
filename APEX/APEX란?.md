@@ -20,6 +20,8 @@ Collection 타입은 List, Set, Map을 사용한다.
 
 **(1) List**
 
+
+
 ```Apex
 
 List<String> myStrings = new List<String>();
